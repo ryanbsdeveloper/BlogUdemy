@@ -127,7 +127,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'templates/static')]
 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = [Path.joinpath(BASE_DIR, 'media')]
+MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
 
 from django.contrib.messages import constants
 
@@ -143,3 +143,7 @@ MESSAGE_TAGS = {
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+INSTALLED_APPS += ('django_summernote', )
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
