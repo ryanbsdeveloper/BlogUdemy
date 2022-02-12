@@ -2,51 +2,15 @@
 <html lang="pt">
 
 <head>
-    <title>Início em Blog do Luiz</title>
-
+    <title>Início em Blog do Ryan</title>
     <!--_head.html-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/theme_1564087106285.css" rel="stylesheet">
+    {% include 'parciais/_head.html'%}
     <!--/_head.html-->
 </head>
 
 <body>
-
 <!--_nav.html-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Blog do Luiz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Python</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Django</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Tecnologia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Sistemas</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0 ml-lg-4" action="/busca/">
-                <input name="termo" value="" class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
-                       aria-label="Search">
-            </form>
-        </div>
-    </div>
-</nav>
+{%include 'parciais/_nav.html'%}
 <!--/_nav.html-->
 
 <!-- Page Content -->
@@ -116,23 +80,8 @@
 </div>
 
 <!--_footer.html-->
-<footer class="bg-primary text-light">
-    <div class="container navbar-dark pt-4 mt-5">
-        <div class="row">
-            <div class="col">
-                <p class="text-left">Powered by Django</p>
-            </div>
-            <div class="col">
-                <p class="text-right">Made By Luiz Otávio</p>
-            </div>
-        </div>
-    </div>
-</footer>
+{%include 'parciais/_footer.html'%}
 <!--/_footer.html-->
-
-<script src="vendor/jquery/jquery.slim.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>
