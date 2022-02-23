@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% load humanize %}
+{% load rbfilters %}
 
 {% block titulo %}Inicio | Blog do Ryan{% endblock %}
 
 {% block conteudo %}
-
 <!-- CONTENT -->
 <div class="card-columns mt-4">
     {% for post in posts %}
@@ -28,7 +28,7 @@
             <p class="card-text">
                 <small class="text-muted">{{post.data|naturalday|title}}
                     |
-                     {{post.numero_comentarios}} Comentario(s)
+                     {{post.numero_comentarios|plural}}
                     |
                     {{post.categoria}}</small>
             </p>
